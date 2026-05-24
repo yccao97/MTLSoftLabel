@@ -57,10 +57,17 @@ Per-notebook `outputs/` directories are created automatically under each
 
 ## Shared helper modules
 
-The notebooks import from a sibling `scripts/` package
-(`data_utils.py`, `metrics.py`, `train_eval.py`, `hp_search.py`). These
-helpers are not included in this repository; point `SCRIPTS_DIR` at the
-directory that holds them before running.
+The notebooks import from the bundled `scripts/` package:
+
+- `data_utils.py` — data loading, split prep, augmentation utilities
+- `metrics.py` — weighted F1, QWK, MAE, bootstrap CI helpers
+- `train_eval.py` — `TrainSettings`, `run_classifier_search`, `run_heor_r0_mtl_search`
+- `hp_search.py` — hyperparameter search loop
+- `hard_label_baselines.py` — TF-IDF / GRU hard-label baseline runners
+
+`SCRIPTS_DIR` defaults to `$PROJECT_ROOT/scripts` (this folder) and is
+prepended to `sys.path` automatically. Override the env var only if you
+want to point at a forked copy.
 
 ## Dependencies
 
