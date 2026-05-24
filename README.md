@@ -3,6 +3,8 @@
 Experiment code for **Multi-Task Learning and Soft-Label Supervision for
 Psychosocial Burden Assessment in Cancer Peer-Support Text**.
 
+**Preprint:** https://www.medrxiv.org/content/10.64898/2026.04.03.26350034v1
+
 The notebooks cover two complementary studies on the *Mental Health
 Insights: Vulnerable Cancer Survivors & Caregivers* corpus (CC BY 4.0):
 
@@ -79,6 +81,14 @@ The corpus is *Mental Health Insights: Vulnerable Cancer Survivors &
 Caregivers* (N = 10,392), released under CC BY 4.0 and available on
 Kaggle, GitHub, and Mendeley Data. The notebooks expect the dataset to
 sit at `$PROJECT_ROOT/data/`.
+
+## Code contributors
+
+- Zhongyan Wang
+- Zhanyi Ding
+- Yeyubei Zhang
+- Xiaorui Shen
+- Yunchong Liu
 
 ## License
 
